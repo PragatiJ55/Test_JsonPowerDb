@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home -The Interior Harvest</title>
+    <link rel="icon" type="image/png" href="favicon/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/about_styles.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive_about_us.css">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a2adfcbaf1.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="javascript/about_us_js.js"></script>
+</head>
+
+<body class="container">
+    <nav class="navbar " id="navbar">
+        <div class="navbar-flex container-width">
+            <div class="logo-container">
+                <img class="logo" id="logo" src="images/mainLogo.png" alt="logo" width="100%" height="100%">
+            </div>
+            <div class="hamburgerCont" id="hamburgerC" onclick="viewNAV()">
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+            </div>
+            <div id="overlay-nav" class="overlay">
+                <p class="close" id="close" onclick="closeNAV()">&times;</p>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a id="active" href="">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="our_team.html">Our Team</a></li>
+                    <li><a href="">Vacancy</a></li>
+                    <li class="contact">
+                        <a href="">Contact Us</a></li>
+                    <a id="tollResp" href="tel:100200300"> Toll-free 100200300</a>
+                </ul>
+            </div>
+            <ul class="navlist">
+                <li><a href="index.html">Home</a></li>
+                <i class="fas fa-circle"></i>
+
+                <li><a class="active" href="">About Us</a></li>
+                <i class="fas fa-circle"></i>
+                <li><a href="services.html">Services</a></li>
+                <i class="fas fa-circle"></i>
+                <li>
+                    <div class="dropdown">
+                        <a href="projects.html" class="dropbtn">Projects</a>
+                        <div class="dropdown-content">
+                            <a href="projects.html#living_room">Living rooms</a>
+                            <a href="projects.html#dining_room">Dining rooms</a>
+                            <a href="projects.html#nursery">Nurseries</a>
+                            <a href="projects.html#office">Offices</a>
+                        </div>
+                    </div>
+                </li>
+                <i class="fas fa-circle"></i>
+                <li><a href="our_team.html">Our Team</a></li>
+                <i class="fas fa-circle"></i>
+                <li><a href="">Vacancy</a></li>
+                <i class="fas fa-circle"></i>
+                <li class="contact"><a class="toll" id="toll" href="tel:100200300"> Toll-free 100200300</a><a
+                        href="">Contact Us</a></li>
+            </ul>
+        </div>
+        <hr id="hr">
+    </nav>
+
+    <div class="first-container">
+        <div class="first_text">
+            <h1>HOW WE STARTED</h1>
+            <p>Interior Harvest is a full service, award-winning interior design firm. Our designs are driven by vibrant
+                color & pattern complimented with textural & sculptural details. With our eclectic style, anything
+                global and cultural continues to inspire us.<br>
+
+                With over 20 years of experience, we’ve got the expertise to match our energetic approach. We travel,
+                cherish family and understand modern lifestyles. Our team is full of laughter, while being serious about
+                your project and its outcome. <br>
+
+                Up-to-date knowledge of industry standards, products, and trades people keeps our team at the top of
+                their game. Collaborating with the best experts in the field, we value the vision and expertise of
+                craftspeople and contractors in our community. <br>
+
+                Our designs reflect each client from concept visualization down to the last detail. The end result is an
+                exceptional design that serves you both functionally and aesthetically.</p>
+        </div>
+        <img src="images/first_about_us.jpg" class="first_about_us_image" />
+
+    </div>
+
+
+    <section class="second-container">
+        <div class="second_text">
+            <h1>AIM</h1>
+            <p>Our goal is for you to be thrilled with every single interaction, purchase and product every single
+                time.<br>
+                And to do that we go beyond just low prices; we focus on providing you true value.<br>
+                Whether it's customer service, or shopping experience, cool furniture for your office,
+                or contemporary furniture for your living room or bedroom, we're committed to combining excellent
+                product quality
+                and service into an experience you just can't beat!<br>
+                And we do all of this at the very best prices, every single day.</p>
+        </div>
+        <img src="images/second_about_us.jpg" class="second_about_us_image" />
+
+    </section>
+
+
+
+    <section class="third-container">
+        <h1>Accomplishments</h1>
+
+        <h2>Design awards</h2>
+        <div class="design_awards">
+            <img src="images/design_award_one.png">
+            <img src="images/design_award_two.jpg">
+            <img src="images/design_award_three.png">
+
+            <div> <img src="images/design_award_four.jpg"></div>
+        </div>
+        <h2>Media features</h2>
+        <div class="media_features">
+            <img src="images/media_features_1.jpg">
+            <img src="images/media_features_2.jpg">
+            <img src="images/media_features_3.jpg">
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="footer container-width">
+            <div class="policies">
+                <a>Privacy policy </a>|
+                <a> Terms of use </a>|
+                <a> Partners</a>
+                <Address><u><b>Office</b></u>: 301-302, Third Floor, Kaushalaya Estate,<br> Bander Bagicha, Patna, Bihar
+                    800001</Address>
+            </div>
+            <small>&copy;2020 The Interior Harvest | All Rights Reserved
+            </small>
+            <div class="social-media">
+                <i class="fab fa-linkedin-in"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-blogger-b"></i>
+                <i class="fab fa-youtube"></i>
+                <br>
+                <a><b><u>E-mail</u></b>: <span>info@interiorharvest.com</span></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="javascript/javscript.js"></script>
+
+</body>
+
+</html>

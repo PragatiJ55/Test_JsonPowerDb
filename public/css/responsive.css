@@ -1,0 +1,178 @@
+@media only screen and (max-width: 1380px) {
+  .logo {
+    height: 112px;
+    width: 220px;
+  }
+  .navbar li:not(.contact) {
+    padding: 0 22.5px;
+  }
+  .logo-container {
+    width: 25.4%;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .approach ul,
+  .testimonial p {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .approach ul,
+  .testimonial p {
+    font-size: 19px;
+  }
+  .navbar-flex {
+    position: relative;
+  }
+  .navbar .navlist {
+    display: none;
+  }
+
+  .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 30;
+    top: 0;
+    left: 0;
+    background-color: rgba(230, 226, 221, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+    display: block;
+  }
+  .overlay ul {
+    list-style-type: none;
+    font-size: 6vh;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    text-align: center;
+    top: 10%;
+  }
+  .overlay ul a {
+    display: block;
+    transition: 0.3s;
+    color: #373a36;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 35px auto;
+  }
+  #tollResp {
+    padding: 5px;
+    border-radius: 30px;
+    border: 1px solid #d48166;
+    background-color: white;
+    color: #d48166;
+    text-transform: lowercase;
+    width: 400px;
+    font-size: 5vh;
+  }
+  #toll-resp {
+    color: #373a36;
+    background-color: rgba(212, 129, 102, 0.3);
+  }
+  .overlay li a:not(#tollResp):hover,
+  #active {
+    /* color: #b8c0b8; */
+    color: #d48166;
+  }
+  .hamburgerCont {
+    position: absolute;
+    right: 0;
+    top: 25px;
+  }
+  .hamburger {
+    height: 8px;
+    margin: 9px;
+    width: 70px;
+    border-radius: 10px;
+    background-color: black;
+    display: block;
+  }
+  .close {
+    position: absolute;
+    font-size: 135px;
+    color: black;
+    right: 55px;
+    top: -20px;
+    /* display: none; */
+  }
+}
+@media only screen and (max-width: 650px) {
+  .approach ul,
+  .testimonial p {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .approach ul,
+  .testimonial p {
+    font-size: 22px;
+  }
+  .approach h1,
+  .testimonial h1 {
+    font-size: 45px;
+  }
+  .design-cont {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -4%;
+  }
+  .consultancy {
+    width: 50%;
+  }
+  .img2 {
+    margin-right: 0;
+    margin-bottom: 4%;
+  }
+  .consultancy button {
+    font-size: 26px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .approach ul,
+  .testimonial p {
+    font-size: 26px;
+  }
+  .approach h1,
+  .testimonial h1 {
+    font-size: 50px;
+  }
+  .home-strip {
+    background-color: transparent;
+    position: relative;
+  }
+  .home-slideshow {
+    margin-top: 18%;
+    width: 100%;
+    height: 80vh;
+  }
+  .quotes {
+    position: absolute;
+    z-index: 5;
+    color: white;
+    top: 75%;
+    width: 65%;
+    padding: 20px;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: rgba(55, 58, 54, 0.4);
+  }
+  .approach {
+    margin-top: 280px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .approach ul,
+  .testimonial p {
+    font-size: 29px;
+  }
+  .consultancy button {
+    font-size: 29px;
+  }
+  .approach {
+    width: 100%;
+  }
+}

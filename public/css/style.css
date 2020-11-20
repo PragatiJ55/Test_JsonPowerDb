@@ -1,0 +1,340 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  /* max-width: 1300px; */
+  font-family: sans-serif;
+  color: #373a36;
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 100px;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: double;
+  color: #373a36;
+}
+.navbar {
+  /*position: fixed;*/
+  position: sticky;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 20;
+  /* background-color: white; */
+}
+.overlay {
+  display: none;
+}
+.navbar-flex {
+  display: flex;
+  flex-direction: row;
+}
+.navbar hr {
+  border: none;
+  height: 0.2px;
+  background-color: #d48166;
+  display: none;
+}
+.logo-container {
+  width: 29.4%;
+}
+.logo {
+  width: 253px;
+  height: 135px;
+}
+.navbar .navlist {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+.navbar li {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.navbar li a:not(#toll):hover,
+.active {
+  /* color: #b8c0b8; */
+  color: #d48166;
+}
+.navbar li:not(.contact) {
+  padding: 0 25px;
+}
+
+.hamburger {
+  display: none;
+}
+.contact {
+  padding-left: 25px;
+  position: relative;
+}
+.contact .toll {
+  position: absolute;
+  top: -40px;
+  left: 18px;
+  padding: 4px;
+  border-radius: 30px;
+  border: 1px solid #d48166;
+  background-color: white;
+  color: #d48166;
+  font-size: 12px;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.contact .toll:hover {
+  color: #373a36;
+  background-color: rgba(212, 129, 102, 0.3);
+}
+.home-strip {
+  background-color: #e6e2dd;
+  margin-top: 180px;
+}
+
+.home-strip-flex {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+}
+.home-slideshow {
+  width: 50%;
+  height: 63vh;
+}
+.home-slideshow img {
+  border-radius: 5px;
+}
+.image-slider {
+  display: none;
+}
+
+.quotes {
+  width: 50%;
+  padding: 0 25px;
+  text-align: center;
+}
+.quotes p {
+  font-size: 45px;
+  font-family: "Courgette", cursive;
+}
+
+.navbar .fa-circle {
+  font-size: 5px;
+}
+.approach {
+  position: relative;
+  margin: 130px auto 120px auto;
+  width: 800px;
+}
+.approach h1,
+.testimonial h1 {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  font-size: 34px;
+  color: #373a36;
+  text-shadow: 2px 1px 5px #525752;
+}
+
+.approach ul {
+  list-style-type: none;
+  line-height: 1.5;
+  text-align: justify;
+  font-size: 17px;
+  color: #626462;
+}
+.approach ul li {
+  margin: 10px auto;
+}
+/* .cherry-background {
+  height: 450px;
+  width: 470px;
+  position: absolute;
+  z-index: -20;
+  opacity: 0.5;
+  overflow: hidden;
+}
+.left{
+  left: -405px;
+  top: -100px;
+  transform: rotate(-6deg);
+} */
+/* .right{
+  bottom: 8%;
+  right: -45px;
+  transform: rotate(10deg);
+} */
+.design-cont {
+  display: flex;
+}
+.consultancy {
+  width: 47.5%;
+  height: 350px;
+  background: #373a36 url("../images/aesthetic.png");
+  background-size: cover;
+  background-blend-mode: soft-light;
+  border-radius: 5px;
+  /* text-align: center; */
+  position: relative;
+}
+.img2 {
+  background: #373a36 url("../images/aesthetic2.jpg");
+  background-size: cover;
+  background-blend-mode: soft-light;
+  margin-right: 5%;
+}
+
+.consultancy button {
+  border: 2px solid #e6e2dd;
+  padding: 20px 20px;
+  width: 85%;
+  word-spacing: 5px;
+  border-radius: 5px;
+  font-size: 20px;
+  box-shadow: 0 0 15px #a8a4a0;
+  color: black;
+  background-color: rgba(230, 226, 221, 0.8);
+  cursor: pointer;
+  outline: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.consultancy button:hover {
+  color: #e6e2dd;
+  background-color: rgba(55, 58, 54, 0.5);
+}
+
+.testimonial {
+  margin: 100px auto 120px auto;
+}
+
+.testimony {
+  margin: 70px auto;
+  height: auto;
+  width: 600px;
+  text-align: center;
+  display: none;
+}
+
+.testimony img {
+  border-radius: 50%;
+  height: 70px;
+  border: 2px solid #373a36;
+  width: 70px;
+  margin-bottom: 30px;
+}
+.testimonySlider {
+  text-align: center;
+}
+.testimonySlider i {
+  margin: 0 7px;
+}
+.testimonySlider i:hover,
+.activetestimony {
+  color: #d48166;
+}
+footer {
+  background-color: #373a36;
+  color: #e6e2dd;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.footer {
+  display: flex;
+  padding: 25px 0;
+  justify-content: center;
+  align-items: center;
+}
+footer a {
+  color: #e6e2dd;
+}
+
+small,
+.social-media,
+.policies {
+  width: 33.33%;
+  letter-spacing: 1.5px;
+  font-size: 13.5px;
+}
+.social-media > a {
+  letter-spacing: 1.5px;
+  font-size: 13.5px;
+}
+small {
+  text-align: right;
+}
+.policies {
+  padding-left: 5px;
+}
+address {
+  margin-top: 15px;
+}
+
+.social-media > a > span {
+  cursor: pointer;
+}
+.social-media {
+  font-size: 18px;
+  padding-left: 12.6%;
+}
+footer .fab {
+  margin: 0 4px 10px 4px;
+  cursor: pointer;
+}
+.fa-linkedin-in {
+  padding-left: 20%;
+}
+.fa-youtube {
+  margin: 0 0 0 4px;
+}
+footer .fab:hover,
+.social-media > a > span:hover,
+.policies a:hover {
+  color: #d48166;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 180px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home -The Interior Harvest</title>
+    <link rel="icon" type="image/png" href="favicon/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/contact_style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a2adfcbaf1.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <!--<script src="javascript/form_submit.js"></script>-->
+</head>
+
+<body class="container">
+    <nav class="navbar " id="navbar">
+        <div class="navbar-flex container-width">
+            <div class="logo-container">
+                <img class="logo" id="logo" src="images/mainLogo.png" alt="logo" width="100%" height="100%">
+            </div>
+            <div class="hamburgerCont" id="hamburgerC" onclick="viewNAV()">
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+            </div>
+            <div id="overlay-nav" class="overlay">
+                <p class="close" id="close" onclick="closeNAV()">&times;</p>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a id="active" href="">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+
+
+
+                    <li><a href="our_team.html">Our Team</a></li>
+                    <li><a href="">Vacancy</a></li>
+                    <li class="contact">
+                        <a href="">Contact Us</a></li>
+                    <a id="tollResp" href="tel:100200300"> Toll-free 100200300</a>
+                </ul>
+            </div>
+            <ul class="navlist">
+                <li><a href="index.html">Home</a></li>
+                <i class="fas fa-circle"></i>
+
+                <li><a href="about_us.html">About Us</a></li>
+                <i class="fas fa-circle"></i>
+                <li><a class="active" href="Services.html">Services</a></li>
+                <i class="fas fa-circle"></i>
+                <li>
+                    <div class="dropdown">
+                        <a href="projects.html" class="dropbtn">Projects</a>
+                        <div class="dropdown-content">
+                            <a href="projects.html#living_room">Living rooms</a>
+                            <a href="projects.html#dining_room">Dining rooms</a>
+                            <a href="projects.html#nursery">Nurseries</a>
+                            <a href="projects.html#office">Offices</a>
+                        </div>
+                    </div>
+                </li>
+                <i class="fas fa-circle"></i>
+                <li><a href="our_team.html">Our Team</a></li>
+                <i class="fas fa-circle"></i>
+                <li><a href="">Vacancy</a></li>
+                <i class="fas fa-circle"></i>
+                <li class="contact"><a class="toll" id="toll" href="tel:100200300"> Toll-free 100200300</a><a
+                        href="">Contact Us</a></li>
+            </ul>
+        </div>
+        <hr id="hr">
+    </nav>
+    <section class="container-width maps-sec">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d14390.650207581522!2d85.12576853018889!3d25.616127139247112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s301-302%2C%20Third%20Floor%2C%20Kaushalaya%20Estate%2C%20Bander%20Bagicha%2C%20Patna%2C%20Bihar%20800001!5e0!3m2!1sen!2sin!4v1605095392338!5m2!1sen!2sin"
+            width="600" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+            tabindex="0" id="mapContact"></iframe>
+        <section class="information">
+            <i class="fas fa-map-marker-alt"></i>&nbsp;<h2>301-302, Third Floor, Kaushalaya Estate,<br>
+                Bander Bagicha, Patna, Bihar 800001</h2>
+            <hr>
+            <a href="mailto:info@interiorharvest.com"><i class="fas fa-envelope"></i></a>
+            <h2>info@interiorharvest.com</h2>
+            <hr>
+            <a href="tel:+919292929290"><i class="fas fa-phone-alt"></i></a>
+            <h2>+91 9292929290</h2>
+            <hr>
+            <a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>&nbsp;<h2>The Interior Harvest</h2>
+            <hr>
+            <div class="flip-outer">
+                <div class="flipcard">
+                    <div class="front"><a href="../images/The Interior Harvest_Business Card.pdf" target="_blank"
+                            download="The Interior Harvest">
+                            <img src="images/cardFront.png" alt="business card" width="100%" height="100%"></a>
+                    </div>
+                    <div class="back"> <a href="../images/The Interior Harvest_Business Card.pdf" target="_blank"
+                            download="The Interior Harvest">
+                            <img src="images/cardBack1.png" alt="business card" width="100%" height="100%"></a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </section>
+    <hr class="divide">
+    <section class="Contactform container-width">
+        <h1>GET IN TOUCH</h1>
+        <form action="/submit-data" autocomplete="off" method="post">
+            <input type="text" name="name" id="name" placeholder="Your Name" required /><br />
+            <input type="email" name="email" id="email" placeholder="Email address" required /><br />
+            <input type="text" name="subject" id="subject" placeholder="Subject" required /><br />
+            <textarea name="query" id="query" placeholder="Message.."></textarea>
+            <div class="btnFlex"><input type="submit" /></div>
+        </form>
+    </section>
+    </div>
+    <footer>
+        <div class="footer container-width">
+            <div class="policies">
+                <a>Privacy policy </a>|
+                <a> Terms of use </a>|
+                <a> Partners</a>
+                <Address><u><b>Office</b></u>: 301-302, Third Floor, Kaushalaya Estate,<br> Bander Bagicha, Patna, Bihar
+                    800001</Address>
+            </div>
+            <small>&copy;2020 The Interior Harvest | All Rights Reserved
+            </small>
+            <div class="social-media">
+                <i class="fab fa-linkedin-in"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-blogger-b"></i>
+                <i class="fab fa-youtube"></i>
+                <br>
+                <a><b><u>E-mail</u></b>: <span>info@interiorharvest.com</span></a>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="javascript/javscript.js"></script>
+
+</body>
+
+</html>

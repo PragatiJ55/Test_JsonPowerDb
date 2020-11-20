@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home -The Interior Harvest</title>
+    <link rel="icon" type="image/png" href="favicon/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/projects_style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive_projects.css">
+    <link rel="stylesheet" type="text/css" href="css/our_team_style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a2adfcbaf1.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="javascript/about_us_js.js"></script>
+</head>
+
+<body class="container">
+    <nav class="navbar " id="navbar">
+        <div class="navbar-flex container-width">
+            <div class="logo-container">
+                <img class="logo" id="logo" src="images/mainLogo.png" alt="logo" width="100%" height="100%">
+            </div>
+            <div class="hamburgerCont" id="hamburgerC" onclick="viewNAV()">
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+            </div>
+            <div id="overlay-nav" class="overlay">
+                <p class="close" id="close" onclick="closeNAV()">&times;</p>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about_us.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a id="active" href="">Our Team</a></li>
+                    <li><a href="">Vacancy</a></li>
+                    <li class="contact">
+                        <a href="">Contact Us</a></li>
+                    <a id="tollResp" href="tel:100200300"> Toll-free 100200300</a>
+                </ul>
+            </div>
+            <ul class="navlist">
+                <li><a href="index.html">Home</a></li>
+                <i class="fas fa-circle"></i>
+
+                <li><a href="about_us.html">About Us</a></li>
+                <i class="fas fa-circle"></i>
+                <li><a href="services.html">Services</a></li>
+                <i class="fas fa-circle"></i>
+                <li>
+                    <div class="dropdown">
+                        <a href="projects.html" class="dropbtn">Projects</a>
+                        <div class="dropdown-content">
+                            <a href="projects.html#living_room">Living rooms</a>
+                            <a href="projects.html#dining_room">Dining rooms</a>
+                            <a href="projects.html#nursery">Nurseries</a>
+                            <a href="projects.html#office">Offices</a>
+                        </div>
+                    </div>
+                </li>
+                <i class="fas fa-circle"></i>
+                <li><a class="active" href="">Our Team</a></li>
+                <i class="fas fa-circle"></i>
+                <li><a href="">Vacancy</a></li>
+                <i class="fas fa-circle"></i>
+                <li class="contact"><a class="toll" id="toll" href="tel:100200300"> Toll-free 100200300</a><a
+                        href="">Contact Us</a></li>
+            </ul>
+        </div>
+        <hr id="hr">
+    </nav>
+    <div class="profiles">
+        <div class="card">
+
+            <div class="card_container" style="background-image: url('images/bedroom_1.jpg');">
+                <img src="images/person_1.jpg" />
+            </div>
+            <p class="name">Avery Lawrence</p>
+            <p class="info">I love a design that counteracts the beauty of simplistic design in combination with
+                intricate, bold design. Striking a delicate balance between these contrasting aesthetics evokes a
+                distinct identity of harmony.</p>
+
+
+        </div>
+        <div class="card">
+
+            <div class="card_container" style="background-image: url('images/dining_room_1.jpg');">
+                <img src="images/person_2.jpg" />
+            </div>
+            <p class="name">Jasmine Elliot</p>
+            <p class="info">My favorite design aesthetics are classic, modern, and contemporary styles. I appreciate
+                natural light in the space, creating shadows while enhancing other features in the space. Although I
+                love neutral tones and minimalist styles, depending on the space, I like to explore different ways of
+                organizing patterns and textures.</p>
+
+
+        </div>
+        <div class="card">
+
+
+            <div class="card_container" style="background-image: url('images/living_room_1.jpg');">
+                <img src="images/person_3.jpg" />
+            </div>
+            <p class="name">Joana Malone</p>
+            <p class="info">Although I enjoy designing any style, I tend to lean toward eclectic designs. I believe that
+                the most beautiful and thought-provoking spaces are the ones that feel as though they were put together
+                or collected over time. I strive to create spaces using elements chosen from different eras and cultures
+                to create a unique design aesthetic.</p>
+
+
+        </div>
+        <div class="card">
+
+
+            <div class="card_container" style="background-image: url('images/nursery_1.jpg');">
+                <img src="images/person_4.jpg" />
+            </div>
+            <p class="name">Jennifer Stewart</p>
+            <p class="info">My favorite design Aesthetic are Modern farmhouse and Transitional. Warmth, practicality,
+                chic all pulled together in harmony. I am drawn to mix of high & low contrasts that works beautifully
+                together. A modern chair with a vintage table can add a whole lot of charm to a vignette. I love the
+                homes that are simple but still have a layered curated look.</p>
+
+
+        </div>
+        <div class="card">
+
+
+            <div class="card_container" style="background-image: url('images/office_1.jpg');">
+                <img src="images/person_5.jpg" />
+            </div>
+            <p class="name">Adrian Farrel</p>
+            <p class="info">I am a lover of all things beautiful,
+                and I like my spaces to reflect that. Style-wise, I gravitate more towards Glam, Modern, Farmhouse, and
+                Transitional but I also really like the other styles and mixing styles together to create an inviting,
+                balanced and functional design that is also thoughtful and pleasant.</p>
+
+
+        </div>
+
+
+    </div>
+
+    </div>
+
+    <footer>
+        <div class="footer container-width">
+            <div class="policies">
+                <a>Privacy policy </a>|
+                <a> Terms of use </a>|
+                <a> Partners</a>
+                <Address><u><b>Office</b></u>: 301-302, Third Floor, Kaushalaya Estate,<br> Bander Bagicha, Patna, Bihar
+                    800001</Address>
+            </div>
+            <small>&copy;2020 The Interior Harvest | All Rights Reserved
+            </small>
+            <div class="social-media">
+                <i class="fab fa-linkedin-in"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-blogger-b"></i>
+                <i class="fab fa-youtube"></i>
+                <br>
+                <a><b><u>E-mail</u></b>: <span>info@interiorharvest.com</span></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="javascript/javscript.js"></script>
+
+</body>
+
+</html>

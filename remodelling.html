@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home -The Interior Harvest</title>
+    <link rel="icon" type="image/png" href="favicon/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/remodelling_style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a2adfcbaf1.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="javascript/about_us_js.js"></script>
+</head>
+
+<body class="container">
+    <nav class="navbar " id="navbar">
+        <div class="navbar-flex container-width">
+            <div class="logo-container">
+                <img class="logo" id="logo" src="images/mainLogo.png" alt="logo" width="100%" height="100%">
+            </div>
+            <div class="hamburgerCont" id="hamburgerC" onclick="viewNAV()">
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+            </div>
+            <div id="overlay-nav" class="overlay">
+                <p class="close" id="close" onclick="closeNAV()">&times;</p>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a id="active" href="">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+
+
+
+                    <li><a href="our_team.html">Our Team</a></li>
+                    <li><a href="">Vacancy</a></li>
+                    <li class="contact">
+                        <a href="">Contact Us</a></li>
+                    <a id="tollResp" href="tel:100200300"> Toll-free 100200300</a>
+                </ul>
+            </div>
+            <ul class="navlist">
+                <li><a href="index.html">Home</a></li>
+                <i class="fas fa-circle"></i>
+
+                <li><a href="about_us.html">About Us</a></li>
+                <i class="fas fa-circle"></i>
+                <li><a class="active" href="Services.html">Services</a></li>
+                <i class="fas fa-circle"></i>
+                <li>
+                    <div class="dropdown">
+                        <a href="projects.html" class="dropbtn">Projects</a>
+                        <div class="dropdown-content">
+                            <a href="projects.html#living_room">Living rooms</a>
+                            <a href="projects.html#dining_room">Dining rooms</a>
+                            <a href="projects.html#nursery">Nurseries</a>
+                            <a href="projects.html#office">Offices</a>
+                        </div>
+                    </div>
+                </li>
+                <i class="fas fa-circle"></i>
+                <li><a href="our_team.html">Our Team</a></li>
+                <i class="fas fa-circle"></i>
+                <li><a href="">Vacancy</a></li>
+                <i class="fas fa-circle"></i>
+                <li class="contact"><a class="toll" id="toll" href="tel:100200300"> Toll-free 100200300</a><a
+                        href="">Contact Us</a></li>
+            </ul>
+        </div>
+        <hr id="hr">
+    </nav>
+    <h1>Remodelling</h1>
+    <div class="photos">
+        <div class="before">
+            <h2>Before</h2>
+            <p>We overhauled an en-suite master bath in a West Village high-rise apartment.</p>
+            <img src="images/before_1.jpg">
+        </div>
+        <div class="after">
+            <h2>After</h2>
+            <p>We removed the existing tub, allowing for a larger shower stall and more cabinetry and closet<br>
+                space. Gray wood paneling contrasts with sleek marble flooring and countertops.</p>
+            <img src="images/after_1.jpg">
+        </div>
+    </div>
+    <div class="photos">
+        <div class="before">
+            <h2>Before</h2>
+            <p>The original kitchen island was laden with mosaic tile, corbels, and beadboard paneling. </p>
+            <img src="images/before_2.jpg">
+        </div>
+        <div class="after">
+            <h2>After</h2>
+            <p> Clad in shiplap and hand-molded subway tiles, the new kitchen is<br> just the right amount of nautical.
+            </p>
+            <img src="images/after_2.jpg">
+        </div>
+    </div>
+    <div class="photos">
+        <div class="before">
+            <h2>Before</h2>
+            <p>The original living space felt heavy due largely to the buttery yellow wall color<br> and shades that
+                covered
+                every window. </p>
+            <img src="images/before_3.jpg">
+        </div>
+        <div class="after">
+            <h2>After</h2>
+            <p> We simplified the living room with a clean-lined fireplace façade</p>
+            <img src="images/after_3.jpg">
+        </div>
+    </div>
+    <div class="photos">
+        <div class="before">
+            <h2>Before</h2>
+            <p>The master bath of a Los Angeles guesthouse renovated by our best designers</p>
+            <img src="images/before_5.jpg">
+        </div>
+        <div class="after">
+            <h2>After</h2>
+            <p>The bright and airy space features a tub, washstands, and fittings by Waterworks.</p>
+            <img src="images/after_5.jpg">
+        </div>
+    </div>
+    <div class="photos">
+        <div class="before">
+            <h2>Before</h2>
+            <p>The unusual-shaped pool had fallen into disrepair.</p>
+            <img src="images/before_4.jpg">
+        </div>
+        <div class="after">
+            <h2>After</h2>
+            <p>Keeping with the style of the original house,<br> we chose a light stucco façade with dark wood details.
+            </p>
+            <img src="images/after_4.jpg">
+        </div>
+    </div>
+    <footer>
+        <div class="footer container-width">
+            <div class="policies">
+                <a>Privacy policy </a>|
+                <a> Terms of use </a>|
+                <a> Partners</a>
+                <Address><u><b>Office</b></u>: 301-302, Third Floor, Kaushalaya Estate,<br> Bander Bagicha, Patna, Bihar
+                    800001</Address>
+            </div>
+            <small>&copy;2020 The Interior Harvest | All Rights Reserved
+            </small>
+            <div class="social-media">
+                <i class="fab fa-linkedin-in"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-blogger-b"></i>
+                <i class="fab fa-youtube"></i>
+                <br>
+                <a><b><u>E-mail</u></b>: <span>info@interiorharvest.com</span></a>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="javascript/javscript.js"></script>
+
+</body>
+
+</html>
