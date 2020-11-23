@@ -4,16 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home -The Interior Harvest</title>
+    <title>Unique Furnitures- The Interior Harvest</title>
     <link rel="icon" type="image/png" href="favicon/favicon.png" />
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/projects_style.css">
+    <link rel="stylesheet" type="text/css" href="css/unique.css">
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
-    <link rel="stylesheet" type="text/css" href="css/responsive_projects.css">
     <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a2adfcbaf1.js" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="javascript/about_us_js.js"></script>
 </head>
 
 <body class="container">
@@ -31,9 +28,9 @@
                 <p class="close" id="close" onclick="closeNAV()">&times;</p>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="about_us.html">About Us</a></li>
+                    <li><a id="active" href="">About Us</a></li>
                     <li><a href="services.html">Services</a></li>
-                    <li><a id="active" href="">Projects</a></li>
+                    <li><a href="projects.html">Projects</a></li>
                     <li><a href="our_team.html">Our Team</a></li>
                     <li><a href="vacancy.html">Vacancy</a></li>
                     <li class="contact">
@@ -47,12 +44,11 @@
 
                 <li><a href="about_us.html">About Us</a></li>
                 <i class="fas fa-circle"></i>
-                <li><a href="services.html">Services</a></li>
+                <li><a class="active" href="Services.html">Services</a></li>
                 <i class="fas fa-circle"></i>
-
                 <li>
                     <div class="dropdown">
-                        <a class="active" href="projects.html" class="dropbtn">Projects</a>
+                        <a href="projects.html" class="dropbtn">Projects</a>
                         <div class="dropdown-content">
                             <a href="projects.html#living_room">Living rooms</a>
                             <a href="projects.html#dining_room">Dining rooms</a>
@@ -61,7 +57,6 @@
                         </div>
                     </div>
                 </li>
-
                 <i class="fas fa-circle"></i>
                 <li><a href="our_team.html">Our Team</a></li>
                 <i class="fas fa-circle"></i>
@@ -73,100 +68,61 @@
         </div>
         <hr id="hr">
     </nav>
-    <div class="sections">
-        <section class="living_room" id="living_room">
-            <h1>Living rooms</h1>
-            <div class="images">
-                <img src="images/living_room_1.jpg">
-                <div class="right_row">
-                    <div class="column">
-                        <img src="images/living_room_2.jpg">
-                        <img src="images/living_room_3.jpg">
-
-                    </div>
-                    <div class="column">
-                        <img src="images/living_room_4.jpg">
-                        <img src="images/living_room_5.jpg">
-                    </div>
+    <section class="container-width unique">
+        <div class="uniqueHeight">
+            <p id="textUnique"></p>
+            <p class="eg-unique">Some of our works:</p>
+            <div class="dd">
+                <H1 class="uniqueF">UNIQUE FURNITURES</H1>
+                <div class="dd-content">
+                    <a href="#table">The Expandable Table</a>
+                    <hr>
+                    <a href="#sofa">Sleeper Sofa cum workstation</a>
+                    <hr>
+                    <a href="#door">The Evolution Door</a>
+                    <hr>
+                    <a href="#reader">Reader's Area</a>
+                    <hr>
+                    <a href="#bed">Cupboard Bed</a>
+                    <hr>
+                    <a href="#board">Blackboard Table</a>
                 </div>
-
-
-
             </div>
+        </div>
+
+        <div id="table" class="category">
+            <h2>THE EXPANDABLE TABLE</h2>
+            <img src="images/table1.jpg" alt="table">
 
 
-
-        </section>
-        <section class="dining_room" id="dining_room">
-            <h1>Dining rooms</h1>
-            <div class="images">
-                <img src="images/dining_room_1.jpg">
-                <div class="left_row">
-                    <div class="column">
-                        <img src="images/dining_room_2.jpg">
-                        <img src="images/dining_room_3.jpg">
-
-                    </div>
-                    <div class="column">
-                        <img src="images/dining_room_4.jpg">
-                        <img src="images/dining_room_5.jpg">
-                    </div>
-                </div>
+        </div>
+        <div id="sofa" class="category-rev">
+            <H2>Sleeper Sofa cum workstation</H2>
+            <img src="images/sofa.jpg" alt="table">
 
 
-
-            </div>
-
-
-
-        </section>
-        <section class="nursery" id="nursery">
-            <h1>Nurseries</h1>
-            <div class="images">
-                <img src="images/nursery_1.jpg">
-                <div class="right_row">
-                    <div class="column">
-                        <img src="images/nursery_2.jpg">
-                        <img src="images/nursery_3.jpg">
-
-                    </div>
-                    <div class="column">
-                        <img src="images/nursery_4.jpg">
-                        <img src="images/nursery_5.jpg">
-                    </div>
-                </div>
+        </div>
+        <div id="door" class="category">
+            <H2>The Evolution Door</H2>
+            <img src="images/door.gif" alt="table">
+        </div>
+        <div id="reader" class="category-rev">
+            <H2>Reader's Area</H2>
+            <img src="images/reader.jpg" alt="table">
 
 
-
-            </div>
-
-
-
-        </section>
-
-
-        <section class="office" id="office">
-            <h1>Offices</h1>
-            <div class="images">
-                <img src="images/office_1.jpg">
-                <div class="left_row">
-                    <div class="column">
-                        <img src="images/office_2.jpg">
-                        <img src="images/office_3.jpg">
-
-                    </div>
-                    <div class="column">
-                        <img src="images/office_4.jpg">
-                        <img src="images/office_5.jpg">
-                    </div>
-                </div>
+        </div>
+        <div id="bed" class="category">
+            <H2>Cupboard Bed</H2>
+            <img src="images/bed.jpg" alt="table">
+        </div>
+        <div id="board" class="category-rev">
+            <H2>Blackboard Table</H2>
+            <img src="images/board.jpg" alt="table">
 
 
-
-            </div>
-        </section>
-    </div>
-
+        </div>
+    </section>
     <footer>
         <div class="footer container-width">
             <div class="policies">
@@ -188,10 +144,8 @@
             </div>
         </div>
     </footer>
-
     <script src="javascript/javscript.js"></script>
-    <script src="javascript/services.js"></script>
-
+    <script src="javascript/unique.js"></script>
 </body>
 
 </html>

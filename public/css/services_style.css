@@ -24,20 +24,7 @@ h1 {
   justify-content: space-around;
   margin-bottom: 10%;
 }
-.unique {
-  width: 700px;
-  height: 450px;
-  background-image: url("../images/services_unique.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-.furnishing {
-  width: 700px;
-  height: 450px;
-  background-image: url("../images/services_furnishing.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-}
+
 .photo {
   float: left;
   width: 700px;
@@ -46,6 +33,7 @@ h1 {
   margin: 20px;
   background-color: black;
 }
+
 h2 {
   text-align: center;
   text-transform: uppercase;

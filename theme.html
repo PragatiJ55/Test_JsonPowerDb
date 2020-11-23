@@ -4,16 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home -The Interior Harvest</title>
+    <title>Theme Rooms- The Interior Harvest</title>
     <link rel="icon" type="image/png" href="favicon/favicon.png" />
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/projects_style.css">
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
-    <link rel="stylesheet" type="text/css" href="css/responsive_projects.css">
+    <link rel="stylesheet" type="text/css" href="css/theme.css">
     <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a2adfcbaf1.js" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="javascript/about_us_js.js"></script>
 </head>
 
 <body class="container">
@@ -31,9 +28,9 @@
                 <p class="close" id="close" onclick="closeNAV()">&times;</p>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="about_us.html">About Us</a></li>
+                    <li><a id="active" href="">About Us</a></li>
                     <li><a href="services.html">Services</a></li>
-                    <li><a id="active" href="">Projects</a></li>
+                    <li><a href="projects.html">Projects</a></li>
                     <li><a href="our_team.html">Our Team</a></li>
                     <li><a href="vacancy.html">Vacancy</a></li>
                     <li class="contact">
@@ -47,12 +44,11 @@
 
                 <li><a href="about_us.html">About Us</a></li>
                 <i class="fas fa-circle"></i>
-                <li><a href="services.html">Services</a></li>
+                <li><a class="active" href="Services.html">Services</a></li>
                 <i class="fas fa-circle"></i>
-
                 <li>
                     <div class="dropdown">
-                        <a class="active" href="projects.html" class="dropbtn">Projects</a>
+                        <a href="projects.html" class="dropbtn">Projects</a>
                         <div class="dropdown-content">
                             <a href="projects.html#living_room">Living rooms</a>
                             <a href="projects.html#dining_room">Dining rooms</a>
@@ -61,7 +57,6 @@
                         </div>
                     </div>
                 </li>
-
                 <i class="fas fa-circle"></i>
                 <li><a href="our_team.html">Our Team</a></li>
                 <i class="fas fa-circle"></i>
@@ -73,105 +68,82 @@
         </div>
         <hr id="hr">
     </nav>
-    <div class="sections">
-        <section class="living_room" id="living_room">
-            <h1>Living rooms</h1>
-            <div class="images">
-                <img src="images/living_room_1.jpg">
-                <div class="right_row">
-                    <div class="column">
-                        <img src="images/living_room_2.jpg">
-                        <img src="images/living_room_3.jpg">
+    <section class="container-width theme">
 
-                    </div>
-                    <div class="column">
-                        <img src="images/living_room_4.jpg">
-                        <img src="images/living_room_5.jpg">
-                    </div>
-                </div>
+        <p class="themeAbout">
+            A successful themed interior demands a high level of creativity and self-discipline from interior designers
+            and
+            intense collaboration among different design trades.
+            But the hard work comes with rewards—beautiful spaces for people at their most vulnerable times.
+            A memorable interior is one way a place can stand out among its peers.
+            A theme is an overlay to a concept that helps tie all of the various spaces together. <br>
+            <span><i class="fas fa-chevron-circle-down" style=" color: #ec9274;"></i>&ensp;Theme gives character to the
+                room&ensp;<i class="fas fa-chevron-circle-down" style=" color: #ec9274;"></i>
+                <br>
+                <p id="workT">SOME OF OUR WORKS:</p>
+            </span>
+        </p>
 
+        <div class="col-1-3 marginRight"> <img src="images/galaxy.jpg" alt="work" onclick="modalBox(this);" width="100%"
+                height="100%">
+            <p class="bgtext ">Galaxy</p>
+        </div>
+        <!-- 
+             -->
+        <div class="col-1-3 marginRight marginLeft"><img src="images/Camping.jpg" alt="work" onclick="modalBox(this);"
+                width="100%" height="100%">
+            <p class="bgtext">Camping</p>
+        </div>
+        <!-- 
+             -->
+        <div class="col-1-3 marginLeft"> <img src="images/sea.jpg" alt="work" onclick="modalBox(this);" width="100%"
+                height="100%">
+            <p class="bgtext">Cinderella</p>
+        </div>
+        <div class="col-1-3 marginRight"> <img src="images/rustic.jpg" alt="work" onclick="modalBox(this);" width="100%"
+                height="100%">
+            <p class="bgtext">Country Side</p>
+        </div>
+        <!-- 
+            -->
+        <div class="col-1-3 marginRight marginLeft"> <img src="images/pink.jpg" alt="work" onclick="modalBox(this);"
+                width="100%" height="100%">
+            <p class="bgtext">Pink Themed</p>
+        </div>
+        <!-- 
+            -->
+        <div class="col-1-3 marginLeft"> <img src="images/boho.jpg" alt="work" onclick="modalBox(this);" width="100%"
+                height="100%">
+            <p class="bgtext">Boho Outdoor</p>
+        </div>
+        <div class="col-1-3 marginRight"> <img src="images/music.jpg" alt="work" onclick="modalBox(this);" width="100%"
+                height="100%">
+            <p class="bgtext">Music</p>
+        </div>
+        <!-- 
+            -->
+        <div class="col-1-3 marginRight marginLeft"> <img src="images/aest.jpg" alt="work" onclick="modalBox(this);"
+                width="100%" height="100%">
+            <p class="bgtext">Aesthetic</p>
+        </div>
+        <!-- 
+            -->
+        <div class="col-1-3 marginLeft"> <img src="images/disney.jpg" alt="work" onclick="modalBox(this);" width="100%"
+                height="100%">
+            <p class="bgtext">Sea</p>
+        </div>
 
-
-            </div>
-
-
-
-        </section>
-        <section class="dining_room" id="dining_room">
-            <h1>Dining rooms</h1>
-            <div class="images">
-                <img src="images/dining_room_1.jpg">
-                <div class="left_row">
-                    <div class="column">
-                        <img src="images/dining_room_2.jpg">
-                        <img src="images/dining_room_3.jpg">
-
-                    </div>
-                    <div class="column">
-                        <img src="images/dining_room_4.jpg">
-                        <img src="images/dining_room_5.jpg">
-                    </div>
-                </div>
-
-
-
-            </div>
-
-
-
-        </section>
-        <section class="nursery" id="nursery">
-            <h1>Nurseries</h1>
-            <div class="images">
-                <img src="images/nursery_1.jpg">
-                <div class="right_row">
-                    <div class="column">
-                        <img src="images/nursery_2.jpg">
-                        <img src="images/nursery_3.jpg">
-
-                    </div>
-                    <div class="column">
-                        <img src="images/nursery_4.jpg">
-                        <img src="images/nursery_5.jpg">
-                    </div>
-                </div>
-
-
-
-            </div>
-
-
-
-        </section>
-
-
-        <section class="office" id="office">
-            <h1>Offices</h1>
-            <div class="images">
-                <img src="images/office_1.jpg">
-                <div class="left_row">
-                    <div class="column">
-                        <img src="images/office_2.jpg">
-                        <img src="images/office_3.jpg">
-
-                    </div>
-                    <div class="column">
-                        <img src="images/office_4.jpg">
-                        <img src="images/office_5.jpg">
-                    </div>
-                </div>
-
-
-
-            </div>
-        </section>
-    </div>
-
+        <div id="myModal" class="modal">
+            <span class="closeTheme">&times;</span>
+            <img class="modal-content" id="img01">
+        </div>
+    </section>
     <footer>
         <div class="footer container-width">
             <div class="policies">
                 <a href="privacy.html">Privacy policy </a>|
                 <a href="terms.html"> Terms of use </a>
+
             </div>
             <div>
                 <small>&copy;2020 The Interior Harvest | All Rights Reserved
@@ -188,10 +160,8 @@
             </div>
         </div>
     </footer>
-
     <script src="javascript/javscript.js"></script>
-    <script src="javascript/services.js"></script>
-
+    <script src="javascript/theme.js"></script>
 </body>
 
 </html>

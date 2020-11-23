@@ -1,0 +1,72 @@
+/* -------------------------------------------------
+    Vacancy
+------------------------------------------------- */
+.collapsible {
+  background-color: #d48166;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  height: auto;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+}
+
+.activeV,
+.collapsible:hover {
+  background-color: #ec9274;
+  border: none;
+  color: white;
+}
+
+.collapsible:after {
+  content: "\002B";
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.activeV:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+
+.vacancy-sec {
+  margin-top: 11%;
+  margin-bottom: 8%;
+}
+.vacancy-sec h1 {
+  text-transform: uppercase;
+  text-shadow: 2px 1px 4px #525752;
+  font-size: 28px;
+  margin-bottom: 1.5%;
+  text-align: center;
+}
+.vacancy-sec .apply {
+  padding: 7px;
+  font-size: 15px;
+  border-radius: 30px;
+  width: 120px;
+  outline: none;
+  border: 2px solid #373a36;
+  cursor: pointer;
+
+  font-weight: bold;
+  margin-left: 45%;
+  background-color: #373a36;
+  color: #e6e2dd;
+}
+.vacancy-sec .apply:hover {
+  background-color: #e6e2dd;
+  color: #373a36;
+}

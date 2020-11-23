@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furnishing- The Interior Harvest</title>
+    <link rel="icon" type="image/png" href="favicon/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="css/furnishing css.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a2adfcbaf1.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="container">
+    <nav class="navbar " id="navbar">
+        <div class="navbar-flex container-width">
+            <div class="logo-container">
+                <img class="logo" id="logo" src="images/mainLogo.png" alt="logo" width="100%" height="100%">
+            </div>
+            <div class="hamburgerCont" id="hamburgerC" onclick="viewNAV()">
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+            </div>
+            <div id="overlay-nav" class="overlay">
+                <p class="close" id="close" onclick="closeNAV()">&times;</p>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a id="active" href="">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="our_team.html">Our Team</a></li>
+                    <li><a href="vacancy.html">Vacancy</a></li>
+                    <li class="contact">
+                        <a href="contact_us.html">Contact Us</a></li>
+                    <a id="tollResp" href="tel:100200300"> Toll-free 100200300</a>
+                </ul>
+            </div>
+            <ul class="navlist">
+                <li><a href="index.html">Home</a></li>
+                <i class="fas fa-circle"></i>
+
+                <li><a href="about_us.html">About Us</a></li>
+                <i class="fas fa-circle"></i>
+                <li><a class="active" href="Services.html">Services</a></li>
+                <i class="fas fa-circle"></i>
+                <li>
+                    <div class="dropdown">
+                        <a href="projects.html" class="dropbtn">Projects</a>
+                        <div class="dropdown-content">
+                            <a href="projects.html#living_room">Living rooms</a>
+                            <a href="projects.html#dining_room">Dining rooms</a>
+                            <a href="projects.html#nursery">Nurseries</a>
+                            <a href="projects.html#office">Offices</a>
+                        </div>
+                    </div>
+                </li>
+                <i class="fas fa-circle"></i>
+                <li><a href="our_team.html">Our Team</a></li>
+                <i class="fas fa-circle"></i>
+                <li><a href="vacancy.html">Vacancy</a></li>
+                <i class="fas fa-circle"></i>
+                <li class="contact"><a class="toll" id="toll" href="tel:100200300"> Toll-free 100200300</a><a
+                        href="contact_us.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <hr id="hr">
+    </nav>
+
+    <section class="container-width" style="padding-bottom:100px">
+        <div class="hero">
+            <div class="hero image">
+                <img src="images/furnishing.jpg" style="height:500px;">
+            </div>
+            <div class="hero-text">Furnishing</div>
+        </div>
+
+        <div class="furnishing">
+            <p>We at Interior Harvest offers innovative furnishing ideas for every room including custom designed home
+                interiors as per the customers needs.<br>Our furnishing materials
+                ranges from sofas and armchairs, tables and chairs, curtains and cushions, garden furnitures, kids
+                furnitures,bedroom, wardrobes and cabinets and kitchen furnishing<br>
+                Choose from our wide range of furnishing materials available in different materials and colours.</p>
+        </div>
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 8</div>
+                <img src="images/image 1.jpg" style="height:600px">
+                <div class="text">Sofas And Armchairs</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 8</div>
+                <img src="images/image 2.jpg" style="height:600px;">
+                <div class="text">Tables And Chairs</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 8</div>
+                <img src="images/image 3.jpg" style="height:600px">
+                <div class="text">Wardrobes and Cabinets</div>
+            </div>
+
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 8</div>
+                <img src="images/image 4.jpg" style="height:600px;">
+                <div class="text">Bedroom Furnishing</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 8</div>
+                <img src="images/image 5.jpg" style="height:600px;">
+                <div class="text">Kids Furnitures</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">6 / 8</div>
+                <img src="images/image 6.jpg" style="height:600px;">
+                <div class="text">Garden Furnishing</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">7 / 8</div>
+                <img src="images/image 7.jpg" style="height:600px;">
+                <div class="text">Curtains And Cushions</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">8 / 8</div>
+                <img src="images/image 8.jpg" style="height:600px;">
+                <div class="text">Kitchen Furnishing</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+            <span class="dot" onclick="currentSlide(8)"></span>
+        </div>
+
+
+    </section>
+
+    <footer>
+        <div class="footer container-width">
+            <div class="policies">
+                <a href="privacy.html">Privacy policy </a>|
+                <a href="terms.html"> Terms of use </a>
+
+            </div>
+            <div>
+                <small>&copy;2020 The Interior Harvest | All Rights Reserved
+                </small>
+            </div>
+
+            <div class="social-media">
+                <i class="fab fa-linkedin-in"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-blogger-b"></i>
+                <i class="fab fa-youtube"></i>
+                <br>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            slides = document.getElementsByClassName("mySlides");
+            dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" activeFurnishing", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " activeFurnishing";
+        }
+    </script>
+    <script src="javascript/javscript.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+.response {
+  height: 80vh;
+  overflow: auto;
+  text-align: center;
+}
+h1 {
+  font-size: 28px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px #525752;
+  text-align: center;
+  margin-top: 10%;
+}
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 70px;
+  margin-bottom: 40px;
+  font-size: 30px;
+  color: #797a78;
+}

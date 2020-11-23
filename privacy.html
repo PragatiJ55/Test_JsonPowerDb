@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home -The Interior Harvest</title>
+    <link rel="icon" type="image/png" href="assets/favicon/favicon.png" />
+    <!--<link rel="stylesheet" type="text/css" href="assets/stylesheets/style.css">-->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/privacy.css" />
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a2adfcbaf1.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="container">
+    <nav class="navbar " id="navbar">
+        <div class="navbar-flex container-width">
+            <div class="logo-container">
+                <img class="logo" id="logo" src="images/mainLogo.png" alt="logo" width="100%" height="100%">
+            </div>
+            <div class="hamburgerCont" id="hamburgerC" onclick="viewNAV()">
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+            </div>
+            <div id="overlay-nav" class="overlay">
+                <p class="close" id="close" onclick="closeNAV()">&times;</p>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about_us.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="our_team.html">Our Team</a></li>
+                    <li><a href="vacancy.html">Vacancy</a></li>
+                    <li class="contact">
+                        <a href="">Contact Us</a></li>
+                    <a id="tollResp" href="tel:100200300"> Toll-free 100200300</a>
+                </ul>
+            </div>
+            <ul class="navlist">
+                <li><a href="index.html">Home</a></li>
+                <i class="fas fa-circle"></i>
+
+                <li><a href="about_us.html">About Us</a></li>
+                <i class="fas fa-circle"></i>
+                <li><a href="services.html">Services</a></li>
+                <i class="fas fa-circle"></i>
+                <li>
+                    <div class="dropdown">
+                        <a href="projects.html" class="dropbtn">Projects</a>
+                        <div class="dropdown-content">
+                            <a href="projects.html#living_room">Living rooms</a>
+                            <a href="projects.html#dining_room">Dining rooms</a>
+                            <a href="projects.html#nursery">Nurseries</a>
+                            <a href="projects.html#office">Offices</a>
+                        </div>
+                    </div>
+                </li>
+                <i class="fas fa-circle"></i>
+                <li><a href="our_team.html">Our Team</a></li>
+                <i class="fas fa-circle"></i>
+                <li><a href="vacancy.html">Vacancy</a></li>
+                <i class="fas fa-circle"></i>
+                <li class="contact"><a class="toll" id="toll" href="tel:100200300"> Toll-free 100200300</a><a
+                        href="contact_us.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <hr id="hr">
+    </nav>
+    <section class="privacyPolicy container-width">
+        <div class="backgroundlogo">
+            <img src="images/logo2.png" width="100%" height="100%">
+        </div>
+        <h1>Privacy Policy</h1>
+        <p>Your privacy is very important to us. As a result, we have created this privacy policy in order for you
+            to understand how we collect, use, or disclose your data. Our privacy policy is outlined below for your
+            review.</p>
+        <h3>Who we are</h3>
+        <p>The Interior Harvest is a full-service fine firm of interior designers known for offering
+            high-quality furnishings and remodelling or designing of rooms. Our website is
+            <u><i>www.interiorharvest.com</i></u></p>
+        <h3>What personal data we collect and why we collect it</h3>
+        <p>We collect the information that you provide to us. Before or at the time of collecting your personal
+            information, we will identify and disclose why we are collecting the information and will only use that
+            information to fulfill our disclosed objective unless we obtain the consent of the individual concerned.
+            We retain that personal information as long as needed to fulfill the disclosed objective. We will
+            collect the information by lawful and fair means and will do our best to maintain the personal data with
+            reasonable security safeguards against unauthorized disclosure, copying or use. We will continue to make
+            our policies available to our customers.</p>
+        <h3>Comments</h3>
+        <p>When visitors leave comments on the site we collect the data shown in the comments form, and also the
+            visitor’s IP address and browser user agent string to help spam detection.</p>
+        <p>An anonymized string created from your email address (also called a hash) may be provided to the Gravatar
+            service to see if you are using it. You can check the Gravatar service privacy policy.
+            After approval of your comment, your profile picture is visible to the
+            public in the context of your comment.</p>
+        <h3>Media</h3>
+        <p>If you upload images to the website, you should avoid uploading images with embedded location data (EXIF
+            GPS) included. Visitors to the website can download and extract any location data from images on the
+            website.</p>
+        <h3>Contact / Subscription forms</h3>
+        <p>We ask for basic contact information from you in our forms in order to contact you back and address any
+            comments or concerns that you may have when contacting us. The type of information that we collect
+            depends on the form that you are completing; however, none of the information provided will be used
+            outside our already stated purposes.</p>
+        <h3>Cookies</h3>
+        <p>If you leave a comment on our site you may opt-in to saving your name, email address and website in
+            cookies. These are for your convenience so that you do not have to fill in your details again when you
+            leave another comment. These cookies will last for one year.</p>
+        <p>If you visit our login page, we will set a temporary cookie to determine if your browser accepts cookies.
+            This cookie contains no personal data and is discarded when you close your browser.</p>
+        <p>If you edit or publish an article, an additional cookie will be saved in your browser. This cookie
+            includes no personal data and simply indicates the post ID of the article you just edited. It expires
+            after 1 day.</p>
+        <h3>Embedded content from other websites</h3>
+        <p>Articles on this site may include embedded content (e.g. videos, images, articles, etc.). Embedded
+            content from other websites behaves in the exact same way as if the visitor has visited the other
+            website.</p>
+        <p>These websites may collect data about you, use cookies, embed additional third-party tracking, and
+            monitor your interaction with that embedded content, including tracking your interaction with the
+            embedded content if you have an account and are logged in to that website.</p>
+        <h3>Who we share your data with</h3>
+        <p>Your data may be shared with third party payment processing and payment gateways to complete your
+            purchase such as PayPal. Your information is encrypted and will only be stored long enough to complete
+            the transaction. Any additional third party providers used by us will only collect, use, or disclose
+            your personal information to the extent necessary to allow them to perform the services they provide to
+            us. All of these third party services and partners have their own privacy policies, so we recommend that
+            you read their privacy policies so you can understand the manner in which your personal information will
+            be handled by these service providers.</p>
+        <h3>How long we retain your data</h3>
+        <p>If you leave a comment, the comment and its metadata are retained indefinitely. This is so we can
+            recognize and approve any follow-up comments automatically instead of holding them in a moderation
+            queue.</p>
+        <p>For users that register on our website (if any), we also store the personal information they provide in
+            their user profile. All users can see, edit, or delete their personal information at any time (except
+            they cannot change their username). Website administrators can also see and edit that information.</p>
+        <h3>What rights you have over your data</h3>
+        <p>If you have an account on this site, or have left comments, you can request to receive an exported file
+            of the personal data we hold about you, including any data you have provided to us. You can also request
+            that we erase any personal data we hold about you. This does not include any data we are obliged to keep
+            for administrative, legal, or security purposes.</p>
+        <p>You can withdraw your consent and opt out of all communication by unsubscribing from our emails, or
+            contacting us at <u><i>info@interiorharvest.com</p></u></i></p>
+        <h3>Where we send your data</h3>
+        <p>Visitor comments may be checked through an automated spam detection service. We may disclose your
+            personal information if we are required by law to do so if you violate our Terms of Service.</p>
+        <h3>The Interior Harvest Contact information</h3>
+        <p>For additional information or to inquire further, please email us at <u><i>info@interiorharvest.com
+            </u></i></p>
+        <p> You can visit our
+            showroom at the following address:</p>
+        <p style="padding-left: 40px;">The Interior Harvest | 301-302, Third Floor, Kaushalaya Estate,
+            Bander Bagicha, Patna, Bihar 800001 |Mob: +91 9292929290</p>
+        <p>We may update this policy as needed at the sole discretion of The Interior Harvest.</p>
+        <br>
+        <p><em>Updated November 12, 2020</em></p>
+        <p>&nbsp;</p>
+        <p><strong>For policy information on pricing, kindly mail us at
+                <u><i><a href="info@interiorharvest.com">info@interiorharvest.com</a></i> </u></strong></p>
+
+    </section>
+    <footer>
+        <div class="footer container-width">
+            <div class="policies">
+                <a class="active" href="">Privacy policy </a>|
+                <a href="terms.html"> Terms of use </a>
+
+
+            </div>
+            <div>
+                <small>&copy;2020 The Interior Harvest | All Rights Reserved
+                </small>
+            </div>
+
+            <div class="social-media">
+                <i class="fab fa-linkedin-in"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-blogger-b"></i>
+                <i class="fab fa-youtube"></i>
+                <br>
+            </div>
+        </div>
+    </footer>
+    <script src="javascript/javscript.js"></script>
+</body>
+
+</html>

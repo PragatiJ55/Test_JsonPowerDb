@@ -1,0 +1,39 @@
+
+.card{
+height:auto;
+background-color:#F4F0DB;
+box-shadow: 10px 10px 5px grey;
+padding:60px;
+margin-bottom: 100px;
+text-align: center;
+}
+
+P{
+font-family:"Courgette";
+font-size:20px;
+text-align: justify;
+}
+h1{
+font-family:"Courgette";
+font-size:40px;
+}
+h2{
+  text-transform: uppercase;
+}
+img{
+width:60%;
+height:350px;
+}
+@media only  screen and (max-width: 450px) {
+.card{
+  margin-bottom: 130px;
+}
+
+}
+.floor{
+height:auto;
+background-color:#F4F0DB;
+box-shadow: 10px 10px 5px grey;
+padding:30px;
+margin: 20px auto 50px auto;
+}
