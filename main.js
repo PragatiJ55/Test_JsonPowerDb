@@ -5,6 +5,7 @@ var app = express();
 var bodyParser= require("body-parser");
 const { REFUSED } = require('dns');
 var urlencodedParser = bodyParser.urlencoded({ extended: false })
+const port=process.env.PORT || 3000
 
 app.use(express.static(__dirname + '/public'));
 app.get('/', function(req, res){
@@ -134,7 +135,7 @@ app.post('/apply',urlencodedParser,function(req,res){
 
 });
 
-var server=app.listen(8080, function(){
+var server=app.listen(port, function(){
     console.log('Node server is running..');
 })
 
