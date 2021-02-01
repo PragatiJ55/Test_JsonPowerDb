@@ -1,11 +1,11 @@
 var mysql= require('mysql')
 var express = require('express');
 var app = express();
-
+const axios = require('axios')
 var bodyParser= require("body-parser");
 const { REFUSED } = require('dns');
 var urlencodedParser = bodyParser.urlencoded({ extended: false })
-const port=process.env.PORT || 3000
+const port=process.env.PORT || 8080
 
 app.use(express.static(__dirname + '/public'));
 app.get('/', function(req, res){
@@ -90,7 +90,7 @@ app.get('/terms.html', function(req, res){
   
 });
 
-
+/*
 var con= mysql.createConnection({
     host:"localhost",
     user:"root",
@@ -100,18 +100,110 @@ var con= mysql.createConnection({
 
 con.connect(function(err){
     if(err) throw err;
-})
+})*/
 app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'ejs');
 app.set('views', __dirname);
 
+function validateAndGetFormData(req){
+    var name_var = req.body.name;
+    if(name_var === ""){
+      alert("Name is required");
+      
+      return "";
+    }
+    var email_var = req.body.email;
+    if(email_var === ""){
+      alert("Name is required");
+      
+      return "";
+    }
+    var subject_var = req.body.subject;
+    if(subject_var === ""){
+      alert("subject is required");
+      
+      return "";
+    }
+    var query_var = req.body.query;
+    if(query_var === ""){
+      alert("query is required");
+     
+      return "";
+    }
+    var jsonStrObj = {
+      name: name_var,
+      email: email_var,
+      subject: subject_var,
+      query: query_var,
+    }
+    return JSON.stringify(jsonStrObj);
+  }
+  // This method is used to create PUT Json request.
+  function createPUTRequest(connToken, jsonObj, dbName, relName) {
+    var putRequest = "{\n"
+            + "\"token\" : \""
+            + connToken
+            + "\","
+            + "\"dbName\": \""
+            + dbName
+            + "\",\n" + "\"cmd\" : \"PUT\",\n"
+            + "\"rel\" : \""
+            + relName + "\","
+            + "\"jsonStr\": \n"
+            + jsonObj
+            + "\n"
+            + "}";
+    return putRequest;
+  }
+  function executeCommandAtGivenBaseUrl(reqString, dbBaseUrl, apiEndPointUrl) {
+    var url = dbBaseUrl + apiEndPointUrl;
+    var jsonObj;
+   /* $.post(url, reqString, function (result) {
+        jsonObj = JSON.parse(result);
+    }).fail(function (result) {
+        var dataJsonObj = result.responseText;
+        jsonObj = JSON.parse(dataJsonObj);
+    });
+    return jsonObj;*/
+
+    axios
+  .post(url, reqString)
+  .then(res => {
+    console.log(`statusCode: ${res.statusCode}`)
+    jsonObj = JSON.parse(res);
+  })
+  .catch(error => {
+    var dataJsonObj = error.responseText;
+        jsonObj = JSON.parse(dataJsonObj);
+  })
+  return jsonObj;
+
+  }
 app.post('/submit-data',urlencodedParser,function(req,res){
+    console.log("what");
+    var jsonStr = validateAndGetFormData(req);
+    if(jsonStr === ""){
+      return;
+    }
+
+    var putReqStr = createPUTRequest("Your_token", jsonStr, "formDB", "queries");
+    //jQuery.ajaxSetup({async: false});
+    //so that it goes back to the form only after executeCommand
+    var resultObj = executeCommandAtGivenBaseUrl(putReqStr, "http://api.login2explore.com:5577", "/api/iml");
+    //alert(JSON.stringify(resultObj));
+    //jQuery.ajaxSetup({async: true});
+   
+    res.render("form_submitted",{name: req.body.name});
+
+});
+/*app.post('/submit-data',urlencodedParser,function(req,res){
     
     var sql="insert into submissions values('"+ req.body.name +"','"+ req.body.email +"','"+ req.body.subject +"','"+ req.body.query +"')";
     console.log(sql);
     con.query(sql, function(err){
         if(err) throw err;
         console.log("1 entry added")
+ 
         res.render("form_submitted",{name: req.body.name});
         
     });
@@ -134,11 +226,10 @@ app.post('/apply',urlencodedParser,function(req,res){
 
 
 });
+*/
 
 var server=app.listen(port, function(){
     console.log('Node server is running..');
 })
-
-
 
   

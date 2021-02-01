@@ -11,7 +11,7 @@ function search_services() {
         x[i].style.display="none"
         if(input.length>0){
             if (textValue.toLowerCase().indexOf(input)>-1) { 
-                console.log("Found something")
+                
                 x[i].style.display="block"; 
             } 
           

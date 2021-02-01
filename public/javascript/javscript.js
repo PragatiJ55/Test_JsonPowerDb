@@ -70,6 +70,79 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
-
-
+/*
+function validateAndGetFormData(){
+  var name_var = $("#name").val();
+  if(name_var === ""){
+    alert("Name is required");
+    $("#name").focus();
+    return "";
+  }
+  var email_var = $("#email").val();
+  if(email_var === ""){
+    alert("Name is required");
+    $("#email").focus();
+    return "";
+  }
+  var subject_var = $("#subject").val();
+  if(subject_var === ""){
+    alert("subject is required");
+    $("#subject").focus();
+    return "";
+  }
+  var query_var = $("#query").val();
+  if(query_var === ""){
+    alert("query is required");
+    $("#query").focus();
+    return "";
+  }
+  var jsonStrObj = {
+    name: name_var,
+    email: email_var,
+    subject: subject_var,
+    query: query_var,
+  }
+  return JSON.stringify(jsonStrObj);
+}
+// This method is used to create PUT Json request.
+function createPUTRequest(connToken, jsonObj, dbName, relName) {
+  var putRequest = "{\n"
+          + "\"token\" : \""
+          + connToken
+          + "\","
+          + "\"dbName\": \""
+          + dbName
+          + "\",\n" + "\"cmd\" : \"PUT\",\n"
+          + "\"rel\" : \""
+          + relName + "\","
+          + "\"jsonStr\": \n"
+          + jsonObj
+          + "\n"
+          + "}";
+  return putRequest;
+}
+function executeCommandAtGivenBaseUrl(reqString, dbBaseUrl, apiEndPointUrl) {
+  var url = dbBaseUrl + apiEndPointUrl;
+  var jsonObj;
+  $.post(url, reqString, function (result) {
+      jsonObj = JSON.parse(result);
+  }).fail(function (result) {
+      var dataJsonObj = result.responseText;
+      jsonObj = JSON.parse(dataJsonObj);
+  });
+  return jsonObj;
+}
+function saveEmployee(){
+  var jsonStr = validateAndGetFormData();
+  if(jsonStr === ""){
+    return;
+  }
+  var putReqStr = createPUTRequest("90937109|-31948801083075639|90931675", jsonStr, "formDB", "queries");
+  jQuery.ajaxSetup({async: false});
+  //so that it goes back to the form only after executeCommand
+  var resultObj = executeCommandAtGivenBaseUrl(putReqStr, "http://api.login2explore.com:5577", "/api/iml");
+  alert(JSON.stringify(resultObj));
+  jQuery.ajaxSetup({async: true});
+  resetForm();
+}*/
 
